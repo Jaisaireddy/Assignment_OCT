@@ -1,0 +1,14 @@
+﻿@model Models_1.Book
+
+@if (Model != null)
+{
+    <div>
+        <h2>@Model.Title</h2>
+        <p>ISBN: @Model.ISBN</p>
+        <p>Author: @Model.Author.Name</p>
+    </div>
+}
+else
+{
+    <p>Book not found.</p>
+}
